@@ -1,0 +1,58 @@
+@import "../../style/variables.scss";
+
+.toggle_container {
+    width: 100%;
+    &__title {
+        background-color: $primary_color;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px 20px;
+        @media screen and (max-width: 768px) {
+            padding: 5px 15px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 500;
+            margin: 0;
+            @media screen and (max-width: 768px) {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.toggle__text {
+    opacity: 1;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: start;
+    color: $primary-color;
+    background: $grey-color;
+    padding: 20px;
+    height: 350px;
+    border-radius: 0 0 5px 5px;
+    transition:
+            height 300ms ease-in-out,
+            opacity 300ms ease-in-out;
+    p {
+        margin: 0;
+    }
+}
+
+.toggle__hidden {
+    opacity: 0;
+    height: 0;
+    transition: height 300ms ease-in-out;
+}
+
+.toggle__list {
+    line-height: 35px;
+    color: $primary-color;
+    font-size: 24px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

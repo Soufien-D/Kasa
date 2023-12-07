@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: auto;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+}
+
+#root {
+  width: 100%;
+}
+
+main {
+  margin: 0 100px;
+  min-height: 71.5%;
+  @media screen and (max-width: 768px) {
+    margin: 0 20px;
+  }
+  @media screen and (min-width: 769px) and (max-width: 991px) {
+    margin: 0 20px;
+  }
+}
+
+main::after {
+  content: "";
+  display: block;
+}
+
+header {
+  margin: 0 100px;
+  @media screen and (max-width: 768px) {
+    margin: 0 20px;
+  }
+  @media screen and (min-width: 769px) and (max-width: 991px) {
+    margin: 0 20px;
+  }
+}

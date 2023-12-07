@@ -1,0 +1,23 @@
+@import '../../style/variables.scss';
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+    padding: 66px 0 58px 0;
+    width: 100%;
+    p {
+        color: $white-color;
+        margin: 0;
+        @media screen and (max-width: 768px) {
+            width: 34%;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500; 
+            text-align: center;
+        }
+    }
+}

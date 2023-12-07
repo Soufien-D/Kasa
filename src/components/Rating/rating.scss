@@ -1,0 +1,16 @@
+.rating {
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: flex-start;
+    }
+    @media screen and (min-width: 769px) and (max-width: 991px) {
+        display: flex;
+        justify-content: flex-end;
+    }
+    img {
+        height: 36px;
+        @media screen and (max-width: 768px) {
+            height: 25px;
+        }
+    }
+}

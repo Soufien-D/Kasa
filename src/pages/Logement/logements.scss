@@ -1,0 +1,73 @@
+@import "../../style/variables.scss";
+
+.logements {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 10px;
+    }
+    &__title {
+        color: $primary-color;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500; 
+        margin: 0 0 5px 0;
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500; 
+        }
+    }
+
+    &__location {
+        color: $primary-color;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500; 
+        margin: 0 0 20px 0;
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500; 
+            margin-bottom: 10px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+
+    &__presentation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__toggles {
+        display: flex;
+        gap: 75px;
+        margin: 25px 0;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px
+        }
+    }
+
+    &__rating {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-end;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

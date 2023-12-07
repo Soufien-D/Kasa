@@ -1,0 +1,26 @@
+.toggle_about {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px auto;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+    @media screen and (min-width: 769px) and (max-width: 991px) {
+        width: 90%;
+    }
+}
+
+.arrow {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &__up {
+        transform: rotate(0deg);
+      }
+
+      &__down {
+        transform: rotate(-180deg);
+      }
+}
